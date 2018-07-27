@@ -12,16 +12,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.TextView;
-
-
 
 import org.enthusia.Constants;
 import org.enthusia.R;
 import org.enthusia.adapter.LeaderboardAdapter;
-import org.enthusia.adapter.NewsFeedAdapter;
 import org.enthusia.model.Department;
 
 import java.io.BufferedReader;
@@ -56,17 +51,16 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
             public void run() {
                 String ans = "";
 
-                if(!isNetworkAvailable()){
-                    try{
+                if (!isNetworkAvailable()) {
+                    try {
                         Snackbar.make(view.findViewById(R.id.cont), "No Internet Connection", Snackbar.LENGTH_SHORT).show();
-                    }
-                    catch(Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                     return;
                 }
 
-                if(Constants.leaderboard.equals("")){
+                if (Constants.leaderboard.equals("")) {
                     try {
                         URL url = new URL("http://www.enthusia.org/leaderboard.txt");
                         String str;
@@ -79,17 +73,16 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                     } catch (IOException exception) {
                         exception.printStackTrace();
                     }
-                }
-                else{
+                } else {
                     ans = Constants.leaderboard;
                 }
                 final String a = ans;
                 ans.trim();
                 final String[] p = ans.split("%");
-                if(ans.length() == 0)
+                if (ans.length() == 0)
                     return;
                 final List<Department> list = new ArrayList<>();
-                for(int i=0; i<p.length; i++){
+                for (int i = 0; i < p.length; i++) {
                     String q = p[i].split("#")[0];
                     String x = p[i].split("#")[1].trim();
                     list.add(new Department(Integer.parseInt(q), x));
@@ -101,11 +94,11 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                     }
                 });
                 final LeaderboardAdapter leaderboardAdapter = new LeaderboardAdapter(list);
-                try{
+                try {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            if(a.length() == 0)
+                            if (a.length() == 0)
                                 return;
                             RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
                             recyclerView.setHasFixedSize(true);
@@ -114,13 +107,12 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
 
                             recyclerView.setAdapter(leaderboardAdapter);
                             recyclerView.setVisibility(View.VISIBLE);
-                            ProgressBar progressBar = (ProgressBar)view.findViewById(R.id.progressBar);
+                            ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
                             progressBar.setIndeterminate(false);
                             progressBar.setVisibility(View.GONE);
                         }
                     });
-                }
-                catch(Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -135,7 +127,7 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                     public void run() {
                         String ans = "";
                         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerview);
-                        final ProgressBar progressBar = (ProgressBar)view.findViewById(R.id.progressBar);
+                        final ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -145,7 +137,7 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                                 swipeRefreshLayout.setRefreshing(false);
                             }
                         });
-                        if(!isNetworkAvailable()){
+                        if (!isNetworkAvailable()) {
                             Snackbar.make(view.findViewById(R.id.cont), "No Internet Connection", Snackbar.LENGTH_SHORT).show();
                             return;
                         }
@@ -163,11 +155,11 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                         }
                         final String a = ans;
                         final String[] p = ans.split("%");
-                        if(ans.length() == 0)
+                        if (ans.length() == 0)
                             return;
                         final List<Department> list = new ArrayList<>();
                         System.out.println(p.length);
-                        for(int i=0; i<p.length; i++){
+                        for (int i = 0; i < p.length; i++) {
                             String q = p[i].split("#")[0];
                             String x = p[i].split("#")[1].trim();
                             list.add(new Department(Integer.parseInt(q), x));
@@ -179,11 +171,11 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                             }
                         });
                         final LeaderboardAdapter leaderboardAdapter = new LeaderboardAdapter(list);
-                        try{
+                        try {
                             getActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    if(a.length() == 0)
+                                    if (a.length() == 0)
                                         return;
                                     recyclerView.setHasFixedSize(true);
                                     LinearLayoutManager llm = new LinearLayoutManager(getActivity());
@@ -195,8 +187,7 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
                                     progressBar.setVisibility(View.GONE);
                                 }
                             });
-                        }
-                        catch(Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
@@ -210,7 +201,10 @@ public class LeaderBoardFragment extends android.support.v4.app.Fragment {
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+
     }
 }

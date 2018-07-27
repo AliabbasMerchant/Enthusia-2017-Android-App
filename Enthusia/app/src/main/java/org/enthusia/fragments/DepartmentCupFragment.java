@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 import org.enthusia.R;
 import org.enthusia.adapter.PagerAdapter;
 
@@ -34,10 +33,10 @@ public class DepartmentCupFragment extends android.support.v4.app.Fragment   {
         mSectionsPagerAdapter = new PagerAdapter(manager);
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        mViewPager =  view.findViewById(R.id.viewpager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
+        TabLayout tabLayout = view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
         return view;
     }
