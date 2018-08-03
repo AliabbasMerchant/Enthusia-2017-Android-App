@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_events"
+            android:icon="@drawable/soccer"
+            android:title="@string/drawer_events_string" />
+        <item
+            android:id="@+id/drawer_cup"
+            android:icon="@drawable/trophy"
+            android:title="@string/drawer_cup_string" />
+
+        <item
+            android:id="@+id/drawer_about_us"
+            android:icon="@drawable/aboutus_icon"
+            android:title="@string/drawer_about_us_string" />
+
+        <item
+            android:id="@+id/drawer_feed"
+            android:icon="@drawable/rss"
+            android:title="@string/drawer_feed_string" />
+
+        <item
+            android:id="@+id/drawer_sponsors"
+            android:icon="@drawable/deal"
+            android:title="@string/drawer_sponsors_string" />
+    </group>
+</menu>

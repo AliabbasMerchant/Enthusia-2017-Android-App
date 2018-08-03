@@ -48,4 +48,10 @@
     <string name="khokho_details">Don\'t be fooled by its simplicity and inexpensiveness. Enthusia gives you a chance to relive your childhood memories! This game demands physical fitness, speed and stamina. To catch by pursuit- to chase rather than just run is the capstone of Kho-Kho. The game develops qualities such as obedience, discipline, sportsmanship and loyalty between team members. Dodging, feinting and controlled bursts of speed makes this sport quite a spectacle and electrifying to play.</string>
     <string name="title_activity_maps">Map</string>
     <string name="mnc_details">Enthusia, in collaboration with an NGO organises a MARATHON to support and reinforce the initiative. On the same lines as MARATHON, Enthusia organises CYCLOTHON to spread awareness about fitness and health.</string>
+    <string name="drawer_events_string">Events</string>
+    <string name="drawer_cup_string">Cup</string>
+    <string name="drawer_about_us_string">About Us</string>
+    <string name="drawer_feed_string">Feed</string>
+    <string name="drawer_sponsors_string">Sponsors</string>
+
 </resources>

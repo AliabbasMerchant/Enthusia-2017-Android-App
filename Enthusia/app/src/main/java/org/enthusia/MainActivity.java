@@ -5,9 +5,16 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,12 +30,6 @@ import org.enthusia.fragments.DepartmentCupFragment;
 import org.enthusia.fragments.EventFragment;
 import org.enthusia.fragments.NewsFeedFragment;
 import org.enthusia.fragments.SponsorsFragment;
-import org.w3c.dom.Text;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
 
 import static org.enthusia.Constants.ABOUT_US_FRAGMENT;
 import static org.enthusia.Constants.COMMITTEE_FRAGMENT;
@@ -45,15 +46,26 @@ public class MainActivity extends AppCompatActivity{
     boolean aboutUsBack = false;
 
     boolean yes = false;
-    Handler hander = new Handler();
+    Handler handler = new Handler();
 
     AHBottomNavigation bottomNavigation;
+    private DrawerLayout drawerLayout;
+    private NavigationView sideNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigation = (AHBottomNavigation)findViewById(R.id.bottom_navigation);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionbar = getSupportActionBar();
+        if(actionbar!=null)
+        {
+            actionbar.setDisplayHomeAsUpEnabled(true);
+            actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        }
+
+        bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#111111"));
         bottomNavigation.setAccentColor(Color.parseColor("#000099"));
         bottomNavigation.setInactiveColor(Color.parseColor("#999999"));
@@ -85,6 +97,20 @@ public class MainActivity extends AppCompatActivity{
         bottomNavigation.addItem(aboutUs);
         bottomNavigation.addItem(feed);
         bottomNavigation.addItem(sponsors);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        sideNavigation = findViewById(R.id.nav_view);
+        sideNavigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if(!item.isChecked()) {
+                    item.setChecked(true);
+                    drawerLayout.closeDrawers();
+                    switchFragments(item.getItemId());
+                }
+                return true;
+            }
+        });
         if (savedInstanceState == null) {
             changeFragment(EVENTS_FRAGMENT);
         }
@@ -102,7 +128,7 @@ public class MainActivity extends AppCompatActivity{
         }
         else{
             Toast.makeText(this, "Press again to exit", Toast.LENGTH_SHORT).show();
-            hander.postDelayed(new Runnable() {
+            handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     yes = false;
@@ -111,11 +137,11 @@ public class MainActivity extends AppCompatActivity{
             yes = true;
         }
     }
-    public void changeFragment(int id) {
+    public void changeFragment(int pos) {
         FragmentManager manager = getSupportFragmentManager();
         final FragmentTransaction fragmentTransaction = manager.beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.enter, R.anim.exit);
-        switch (id){
+        switch (pos){
             case EVENTS_FRAGMENT:
                 fragmentTransaction.replace(R.id.fragment_container, new EventFragment());
                 break;
@@ -141,6 +167,29 @@ public class MainActivity extends AppCompatActivity{
                 break;
         }
         fragmentTransaction.commit();
+    }
+    public void switchFragments(int id){
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.setCustomAnimations(R.anim.enter, R.anim.exit);
+        switch(id){
+            case R.id.drawer_events:
+                transaction.replace(R.id.fragment_container, new EventFragment());
+                break;
+            case R.id.drawer_about_us:
+                transaction.replace(R.id.fragment_container, new AboutUsFragment());
+                break;
+            case R.id.drawer_sponsors:
+                transaction.replace(R.id.fragment_container, new SponsorsFragment());
+                break;
+            case R.id.drawer_cup:
+                transaction.replace(R.id.fragment_container, new DepartmentCupFragment());
+                break;
+            case R.id.drawer_feed:
+                transaction.replace(R.id.fragment_container, new NewsFeedFragment());
+                break;
+        }
+        transaction.commit();
     }
     public void launchDialer(View v){
         TextView textView = (TextView) v;
@@ -193,4 +242,14 @@ public class MainActivity extends AppCompatActivity{
         i.setData(Uri.parse(url));
         startActivity(i);
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                drawerLayout.openDrawer(GravityCompat.START);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
