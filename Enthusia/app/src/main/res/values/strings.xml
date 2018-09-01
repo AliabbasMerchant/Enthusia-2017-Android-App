@@ -53,5 +53,6 @@
     <string name="drawer_about_us_string">About Us</string>
     <string name="drawer_feed_string">Feed</string>
     <string name="drawer_sponsors_string">Sponsors</string>
-
+    <string name="drawer_register_string">Sign Up</string>
+    <string name="drawer_login_string">Login</string>
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
         <item
             android:id="@+id/drawer_events"
             android:icon="@drawable/soccer"
@@ -24,5 +25,15 @@
             android:id="@+id/drawer_sponsors"
             android:icon="@drawable/deal"
             android:title="@string/drawer_sponsors_string" />
+    </group>
+    <group android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/drawer_register"
+            android:title="@string/drawer_register_string" >
+        </item>
+        <item
+            android:id="@+id/drawer_login"
+            android:title="@string/drawer_login_string">
+        </item>
     </group>
 </menu>
