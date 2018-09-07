@@ -8,9 +8,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.flaviofaria.kenburnsview.KenBurnsView;
 
 public class SplashScreen extends AppCompatActivity{
 
@@ -20,7 +17,7 @@ public class SplashScreen extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView = findViewById(R.id.imageView);
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.splash_screen);
         Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         View v = findViewById(R.id.container);
@@ -36,6 +33,6 @@ public class SplashScreen extends AppCompatActivity{
                 overridePendingTransition(R.anim.enter, R.anim.exit);
                 finish();
             }
-        },2500);
+        },2000);
     }
 }

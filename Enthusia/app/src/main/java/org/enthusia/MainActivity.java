@@ -1,7 +1,6 @@
 package org.enthusia;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,8 +18,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.ramotion.foldingcell.FoldingCell;
 
 import org.enthusia.fragments.AboutUsFragment;
@@ -48,7 +45,7 @@ public class MainActivity extends AppCompatActivity{
     boolean yes = false;
     Handler handler = new Handler();
 
-    AHBottomNavigation bottomNavigation;
+//    AHBottomNavigation bottomNavigation;
     private DrawerLayout drawerLayout;
     private NavigationView sideNavigation;
 
@@ -65,38 +62,38 @@ public class MainActivity extends AppCompatActivity{
             actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
         }
 
-        bottomNavigation = findViewById(R.id.bottom_navigation);
-        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#111111"));
-        bottomNavigation.setAccentColor(Color.parseColor("#000099"));
-        bottomNavigation.setInactiveColor(Color.parseColor("#999999"));
-        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
-        bottomNavigation.setBehaviorTranslationEnabled(false);
-        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
-            @Override
-            public boolean onTabSelected(int position, boolean wasSelected) {
-                if(!wasSelected){
-                    changeFragment(position);
-                    bottomNavigation.setCurrentItem(position, false);
-                }
-                return false;
-            }
-        });
-        AHBottomNavigationItem events =
-                new AHBottomNavigationItem("Events", R.drawable.soccer);
-        AHBottomNavigationItem aboutUs =
-                new AHBottomNavigationItem("About Us", R.drawable.info);
-        AHBottomNavigationItem departmentCup =
-                new AHBottomNavigationItem("Cup", R.drawable.trophy);
-        AHBottomNavigationItem sponsors =
-                new AHBottomNavigationItem("Sponsors", R.drawable.deal);
-        AHBottomNavigationItem feed =
-                new AHBottomNavigationItem("Feed", R.drawable.rss);
-
-        bottomNavigation.addItem(events);
-        bottomNavigation.addItem(departmentCup);
-        bottomNavigation.addItem(aboutUs);
-        bottomNavigation.addItem(feed);
-        bottomNavigation.addItem(sponsors);
+//        bottomNavigation = findViewById(R.id.bottom_navigation);
+//        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#111111"));
+//        bottomNavigation.setAccentColor(Color.parseColor("#000099"));
+//        bottomNavigation.setInactiveColor(Color.parseColor("#999999"));
+//        bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
+//        bottomNavigation.setBehaviorTranslationEnabled(false);
+//        bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
+//            @Override
+//            public boolean onTabSelected(int position, boolean wasSelected) {
+//                if(!wasSelected){
+//                    changeFragment(position);
+//                    bottomNavigation.setCurrentItem(position, false);
+//                }
+//                return false;
+//            }
+//        });
+//        AHBottomNavigationItem events =
+//                new AHBottomNavigationItem("Events", R.drawable.soccer);
+//        AHBottomNavigationItem aboutUs =
+//                new AHBottomNavigationItem("About Us", R.drawable.info);
+//        AHBottomNavigationItem departmentCup =
+//                new AHBottomNavigationItem("Cup", R.drawable.trophy);
+//        AHBottomNavigationItem sponsors =
+//                new AHBottomNavigationItem("Sponsors", R.drawable.deal);
+//        AHBottomNavigationItem feed =
+//                new AHBottomNavigationItem("Feed", R.drawable.rss);
+//
+//        bottomNavigation.addItem(events);
+//        bottomNavigation.addItem(departmentCup);
+//        bottomNavigation.addItem(aboutUs);
+//        bottomNavigation.addItem(feed);
+//        bottomNavigation.addItem(sponsors);
 
         drawerLayout = findViewById(R.id.drawer_layout);
         sideNavigation = findViewById(R.id.nav_view);
@@ -108,9 +105,13 @@ public class MainActivity extends AppCompatActivity{
                     drawerLayout.closeDrawers();
                     switchFragments(item.getItemId());
                 }
+                else{
+                    drawerLayout.closeDrawers();
+                }
                 return true;
             }
         });
+        sideNavigation.getMenu().getItem(0).setChecked(true);
         if (savedInstanceState == null) {
             changeFragment(EVENTS_FRAGMENT);
         }
