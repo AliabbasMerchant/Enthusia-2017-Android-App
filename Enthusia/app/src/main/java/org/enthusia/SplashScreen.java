@@ -29,10 +29,10 @@ public class SplashScreen extends AppCompatActivity{
             @Override
             public void run() {
                 Intent i = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(i);
                 overridePendingTransition(R.anim.enter, R.anim.exit);
+                startActivity(i);
                 finish();
             }
-        },2000);
+        },2500);
     }
 }

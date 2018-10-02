@@ -55,4 +55,7 @@
     <string name="drawer_sponsors_string">Sponsors</string>
     <string name="drawer_register_string">Sign Up</string>
     <string name="drawer_login_string">Login</string>
+    <string name="drawer_enba_string">EnBA!</string>
+    <string name="pool_A_string"> Pool A </string>
+    <string name="pool_B_string"> Pool B </string>
 </resources>

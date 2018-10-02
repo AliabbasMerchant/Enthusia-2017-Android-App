@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group_A_list">
+        <item>Ankle Breakers</item>
+        <item>Dunking Dononts</item>
+        <item>Lebronto Rapters</item>
+        <item>Wakanda State Warriors</item>
+        <item>Grasshoopers</item>
+    </string-array>
+
+    <string-array name="group_B_list">
+        <item>James of Thrones</item>
+        <item>Valyrian Wizards</item>
+        <item>Shaqramento Kings</item>
+        <item>Chef Curry</item>
+        <item>Kobe Manchurian</item>
+
+    </string-array>
+</resources>

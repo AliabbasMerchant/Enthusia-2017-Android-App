@@ -24,6 +24,7 @@ import org.enthusia.fragments.AboutUsFragment;
 import org.enthusia.fragments.CommitteeFragment;
 import org.enthusia.fragments.DHFragment;
 import org.enthusia.fragments.DepartmentCupFragment;
+import org.enthusia.fragments.EnbaFragment;
 import org.enthusia.fragments.EventFragment;
 import org.enthusia.fragments.NewsFeedFragment;
 import org.enthusia.fragments.SponsorsFragment;
@@ -50,11 +51,12 @@ public class MainActivity extends AppCompatActivity{
     private NavigationView sideNavigation;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // Custom action bar to adhere to material design
         ActionBar actionbar = getSupportActionBar();
         if(actionbar!=null)
         {
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity{
 //        bottomNavigation.addItem(aboutUs);
 //        bottomNavigation.addItem(feed);
 //        bottomNavigation.addItem(sponsors);
-
+        //Initialising and attaching listener to side bar
         drawerLayout = findViewById(R.id.drawer_layout);
         sideNavigation = findViewById(R.id.nav_view);
         sideNavigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -188,6 +190,9 @@ public class MainActivity extends AppCompatActivity{
                 break;
             case R.id.drawer_feed:
                 transaction.replace(R.id.fragment_container, new NewsFeedFragment());
+                break;
+            case R.id.drawer_enba:
+                transaction.replace(R.id.fragment_container, new EnbaFragment());
                 break;
         }
         transaction.commit();
