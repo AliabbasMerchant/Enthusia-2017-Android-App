@@ -58,4 +58,7 @@
     <string name="drawer_enba_string">EnBA!</string>
     <string name="pool_A_string"> Pool A </string>
     <string name="pool_B_string"> Pool B </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
