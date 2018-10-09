@@ -28,5 +28,6 @@
     <color name="accent">#222222</color>
     <color name="hintColor">#000099</color>
     <color name="mainTextColor">#343d43</color>
+    <color name="back_grey">#826c7880</color>
     <color name="registerButtonTextColor">#ffffff</color>
 </resources>
