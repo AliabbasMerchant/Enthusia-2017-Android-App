@@ -2,6 +2,7 @@ package org.enthusia.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,6 +63,9 @@ public class EnbaMatchCardAdapter extends BaseAdapter {
 
         RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(layoutManager);
+
+//        recyclerView.addItemDecoration(new DividerItemDecoration(view.getContext(),
+//                DividerItemDecoration.VERTICAL));
 
         EnbaMatchCardElementAdapter adapter = new EnbaMatchCardElementAdapter(matchCardElements);
         recyclerView.setAdapter(adapter);
