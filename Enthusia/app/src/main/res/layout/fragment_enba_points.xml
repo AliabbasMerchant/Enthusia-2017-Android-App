@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnbaFixturesFragment">
+    tools:context=".EnbaPointsFragment">
 
     <LinearLayout
-        android:id="@+id/cont"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_vertical|center_horizontal"
@@ -15,7 +15,8 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/match_card_list_view"/>
+            android:id="@+id/points_card_list_view"/>
 
     </LinearLayout>
+
 </FrameLayout>
