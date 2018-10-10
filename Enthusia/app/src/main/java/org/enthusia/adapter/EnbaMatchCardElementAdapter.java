@@ -14,11 +14,11 @@ import org.enthusia.model.MatchCardElement;
 
 import java.util.ArrayList;
 
-public class EnbaMatchCardElementAdapter extends RecyclerView.Adapter {
+public class EnbaMatchCardElementAdapter extends RecyclerView.Adapter<EnbaMatchCardElementAdapter.MyViewHolder> {
 
-    private ArrayList<MatchCardElement>  matchCardElementArrayList;
+    private ArrayList<MatchCardElement> matchCardElementArrayList;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView leftTeam, rightTeam, score;
 
         public MyViewHolder(@NonNull View itemView) {
@@ -29,27 +29,28 @@ public class EnbaMatchCardElementAdapter extends RecyclerView.Adapter {
         }
     }
 
-    public EnbaMatchCardElementAdapter(ArrayList<MatchCardElement> arrayList){
+    public EnbaMatchCardElementAdapter(ArrayList<MatchCardElement> arrayList) {
         this.matchCardElementArrayList = arrayList;
     }
 
+
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View item = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.match_card_element, viewGroup, false);
         return new MyViewHolder(item);
     }
 
+
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
-        MyViewHolder holder = (MyViewHolder) viewHolder;
+    public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
+        MyViewHolder holder = myViewHolder;
         MatchCardElement matchCardElement = matchCardElementArrayList.get(i);
 
-        holder.leftTeam.setText("Team A");
+        holder.leftTeam.setText(matchCardElement.getLeftTeam());
         holder.rightTeam.setText(matchCardElement.getRightTeam());
         holder.score.setText(matchCardElement.getScore());
-
     }
 
     @Override

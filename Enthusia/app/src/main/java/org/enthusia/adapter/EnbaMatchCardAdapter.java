@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import org.enthusia.R;
+import org.enthusia.Utility.CustomLinearLayoutManager;
 import org.enthusia.model.MatchCard;
+import org.enthusia.model.MatchCardElement;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -20,9 +22,8 @@ public class EnbaMatchCardAdapter extends BaseAdapter {
     private List<MatchCard> matchCards;
     private Activity activity;
     private LayoutInflater inflater;
-
+    private ArrayList<MatchCardElement> matchCardElements;
     JSONObject data;
-
 
     public EnbaMatchCardAdapter(Activity activity, List<MatchCard> matchCards){
         super();
@@ -51,7 +52,19 @@ public class EnbaMatchCardAdapter extends BaseAdapter {
         if (view == null)
             view = inflater.inflate(R.layout.match_card, null);
 
-//        data = matchCards.get(i).getData();
+
+        RecyclerView recyclerView = view.findViewById(R.id.match_card_element_recycler_view);
+        matchCardElements= new ArrayList<>();
+        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "20-20"));
+        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "30-30"));
+        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "40-40"));
+        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "50-50"));
+
+        RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(view.getContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        EnbaMatchCardElementAdapter adapter = new EnbaMatchCardElementAdapter(matchCardElements);
+        recyclerView.setAdapter(adapter);
 
         return view;
     }
