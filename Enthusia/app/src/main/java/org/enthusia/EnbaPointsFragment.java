@@ -46,14 +46,14 @@ public class EnbaPointsFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_enba_points, container, false);
         getPointsData();
         if(pointsData!=null) {
-
-            ArrayList<MatchCard> cards = new ArrayList<>();
-            cards.add(new MatchCard(getActivity()));
-            cards.add(new MatchCard(getActivity()));
-            cards.add(new MatchCard(getActivity()));
-            EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
-            ListView listView = v.findViewById(R.id.match_card_list_view);
-            listView.setAdapter(adapter);
+//
+//            ArrayList<MatchCard> cards = new ArrayList<>();
+//            cards.add(new MatchCard(getActivity()));
+//            cards.add(new MatchCard(getActivity()));
+//            cards.add(new MatchCard(getActivity()));
+//            EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
+//            ListView listView = v.findViewById(R.id.match_card_list_view);
+//            listView.setAdapter(adapter);
 
         }
         return v;
