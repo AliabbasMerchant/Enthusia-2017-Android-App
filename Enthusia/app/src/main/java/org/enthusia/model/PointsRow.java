@@ -9,6 +9,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import org.enthusia.R;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -51,7 +52,19 @@ public class PointsRow  {
     }
 
     public void inflate_data() {
-        
+        try {
+            String Sr_no = data.getString("sr_no");
+            String Team_name = data.getString("team_name");
+            String P = data.getString("p");
+            String W = data.getString("w");
+            String L = data.getString("l");
+            String Pf = data.getString("pf");
+            String Pa = data.getString("pa");
+            String Pts = data.getString("pts");
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     public String getSr_no() {
