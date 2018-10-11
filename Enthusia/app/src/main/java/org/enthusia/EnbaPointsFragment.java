@@ -59,9 +59,7 @@ public class EnbaPointsFragment extends Fragment {
         rows.add(new PointsRow("1", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
         rows.add(new PointsRow("2", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
         rows.add(new PointsRow("3", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
-//            rows.add(new PointsRow("4","CaffeineOverflow","3","3","0","288","280","6"));
-//            rows.add(new PointsRow("5","CaffeineOverflow","3","3","0","288","280","6"));
-//            rows.add(new PointsRow("6","CaffeineOverflow","3","3","0","288","280","6"));
+
         getPointsData();
         if (pointsData != null) {
             try {
@@ -78,21 +76,14 @@ public class EnbaPointsFragment extends Fragment {
             }
         }
 
-//            ArrayList<MatchCard> cards = new ArrayList<>();
-//            cards.add(new MatchCard(getActivity()));
-//            cards.add(new MatchCard(getActivity()));
-//            cards.add(new MatchCard(getActivity()));
-//            EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
-//            ListView listView = v.findViewById(R.id.match_card_list_view);
-//            listView.setAdapter(adapter);
-
             EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
             RecyclerView recyclerView = v.findViewById(R.id.points_card_list_view);
 
             RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(v.getContext());
             recyclerView.setLayoutManager(layoutManager);
             recyclerView.setAdapter(adapter);
-//        }
+
+
         return v;
     }
 

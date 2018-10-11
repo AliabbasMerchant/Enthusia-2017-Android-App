@@ -67,4 +67,4 @@ public class EnbaPointsRowAdapter extends RecyclerView.Adapter<EnbaPointsRowAdap
 
 
 
- }
+}
