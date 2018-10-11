@@ -46,6 +46,18 @@ public class EnbaPointsFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_enba_points, container, false);
         getPointsData();
         if(pointsData!=null) {
+            try {
+                JSONObject GroupA = pointsData.getJSONObject("Group A");
+                JSONObject GroupB = pointsData.getJSONObject("Group B");
+                for(int i=1; i<=5; i++) {
+                    JSONObject object = GroupA.getJSONObject(Integer.toString(i));
+                }
+                for(int i=1; i<=5; i++) {
+                    JSONObject object = GroupB.getJSONObject(Integer.toString(i));
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
 
             ArrayList<MatchCard> cards = new ArrayList<>();
             cards.add(new MatchCard(getActivity()));
