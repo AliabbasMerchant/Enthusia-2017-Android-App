@@ -91,6 +91,7 @@ public class EnbaPointsFragment extends Fragment {
         return v;
     }
 
+
     void getPointsData() {
         RequestQueue queue = Volley.newRequestQueue(getActivity());
         String pointsURL = getResources().getString(R.string.pointsURL);

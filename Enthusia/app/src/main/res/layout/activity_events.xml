@@ -4503,7 +4503,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            folding-cell:additionalFlipsCount="4"
+            folding-cell:additionalFlipsCount="5"
             folding-cell:animationDuration="1300"
             folding-cell:backSideColor="@color/bgBackSideColor"
             folding-cell:cameraHeight="30">

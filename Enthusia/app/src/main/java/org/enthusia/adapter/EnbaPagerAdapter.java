@@ -31,7 +31,7 @@ public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
-            case 0: return "Fixtures";
+            case 0: return "Matches";
             case 1: return "Points Table";
             default: return null;
         }
