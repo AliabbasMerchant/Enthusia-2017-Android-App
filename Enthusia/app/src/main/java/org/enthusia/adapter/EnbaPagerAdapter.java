@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import org.enthusia.EnbaFixturesFragment;
+import org.enthusia.EnbaPointsFragment;
 import org.enthusia.EnbaPoolFragment;
 
 public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
@@ -17,7 +18,7 @@ public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if(position == 1 )
-            return new EnbaPoolFragment();
+            return new EnbaPointsFragment();
         return new EnbaFixturesFragment();
     }
 
