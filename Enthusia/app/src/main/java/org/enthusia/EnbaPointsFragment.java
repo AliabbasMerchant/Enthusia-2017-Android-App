@@ -56,9 +56,9 @@ public class EnbaPointsFragment extends Fragment {
 //            ListView listView = v.findViewById(R.id.match_card_list_view);
 //            listView.setAdapter(adapter);
         ArrayList<PointsRow> rows = new ArrayList<>();
-            rows.add(new PointsRow("1","CaffeineOverflow","3","3","0","288","280","6"));
-            rows.add(new PointsRow("2","CaffeineOverflow","3","3","0","288","280","6"));
-            rows.add(new PointsRow("3","CaffeineOverflow","3","3","0","288","280","6"));
+        rows.add(new PointsRow("1", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
+        rows.add(new PointsRow("2", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
+        rows.add(new PointsRow("3", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
 //            rows.add(new PointsRow("4","CaffeineOverflow","3","3","0","288","280","6"));
 //            rows.add(new PointsRow("5","CaffeineOverflow","3","3","0","288","280","6"));
 //            rows.add(new PointsRow("6","CaffeineOverflow","3","3","0","288","280","6"));
@@ -76,6 +76,7 @@ public class EnbaPointsFragment extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+        }
 
 //            ArrayList<MatchCard> cards = new ArrayList<>();
 //            cards.add(new MatchCard(getActivity()));
@@ -92,9 +93,9 @@ public class EnbaPointsFragment extends Fragment {
             recyclerView.setLayoutManager(layoutManager);
             recyclerView.setAdapter(adapter);
 //        }
-            return v;
-        }
+        return v;
     }
+
 
     void getPointsData() {
         RequestQueue queue = Volley.newRequestQueue(getActivity());
