@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +16,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.enthusia.Utility.CustomLinearLayoutManager;
 import org.enthusia.adapter.EnbaMatchCardAdapter;
+import org.enthusia.adapter.EnbaPointsRowAdapter;
 import org.enthusia.model.MatchCard;
 import org.enthusia.model.PointsRow;
 import org.json.JSONArray;
@@ -44,31 +47,39 @@ public class EnbaPointsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.fragment_enba_points, container, false);
+        View v = inflater.inflate(R.layout.fragment_enba_points, container, false);
+//            ArrayList<MatchCard> cards = new ArrayList<>();
+//            cards.add(new MatchCard(getActivity()));
+//            cards.add(new MatchCard(getActivity()));
+//            cards.add(new MatchCard(getActivity()));
+//            EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
+//            ListView listView = v.findViewById(R.id.match_card_list_view);
+//            listView.setAdapter(adapter);
+        ArrayList<PointsRow> rows = new ArrayList<>();
+        rows.add(new PointsRow("1", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
+        rows.add(new PointsRow("2", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
+        rows.add(new PointsRow("3", "CaffeineOverflow", "3", "3", "0", "288", "280", "6"));
         getPointsData();
-        if(pointsData!=null) {
-            ArrayList<PointsRow> pointsRows = new ArrayList<>();
+        if (pointsData != null) {
             try {
                 JSONObject GroupA = pointsData.getJSONObject("Group A");
                 JSONObject GroupB = pointsData.getJSONObject("Group B");
-                for(int i=1; i<=5; i++) {
+                for (int i = 1; i <= 5; i++) {
                     JSONObject object = GroupA.getJSONObject(Integer.toString(i));
                 }
-                for(int i=1; i<=5; i++) {
+                for (int i = 1; i <= 5; i++) {
                     JSONObject object = GroupB.getJSONObject(Integer.toString(i));
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
-            ArrayList<MatchCard> cards = new ArrayList<>();
-            cards.add(new MatchCard(getActivity()));
-            cards.add(new MatchCard(getActivity()));
-            cards.add(new MatchCard(getActivity()));
-            EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
-            ListView listView = v.findViewById(R.id.match_card_list_view);
-            listView.setAdapter(adapter);
+            EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
+            RecyclerView recyclerView = v.findViewById(R.id.points_card_list_view);
 
+            RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(v.getContext());
+            recyclerView.setLayoutManager(layoutManager);
+            recyclerView.setAdapter(adapter);
         }
         return v;
     }

@@ -14,52 +14,88 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class PointsRow extends ConstraintLayout {
-    TextView sr_no, team_name, p, w, l, pf, pa, pts;
+public class PointsRow  {
+    String sr_no, team_name, p, w, l, pf, pa, pts;
     JSONObject data;
-    public PointsRow(Context context) {
-        super(context);
-        LayoutInflater.from(context).inflate(R.layout.match_card,this,true);
-        inflate_data();
+    public PointsRow() {
+        super();
     }
-    public PointsRow(Context context, JSONObject data) {
-        super(context);
+    public PointsRow(JSONObject data) {
+        super();
         this.data = data;
-        LayoutInflater.from(context).inflate(R.layout.match_card,this,true);
-        sr_no = findViewById(R.id.sr_no);
-        team_name = findViewById(R.id.team_name);
-        p = findViewById(R.id.p);
-        w = findViewById(R.id.w);
-        l = findViewById(R.id.l);
-        pf = findViewById(R.id.pf);
-        pa = findViewById(R.id.pa);
-        pts = findViewById(R.id.pts);
+//        LayoutInflater.from(context).inflate(R.layout.match_card,this,true);
+//        sr_no = findViewById(R.id.sr_no);
+//        team_name = findViewById(R.id.team_name);
+//        p = findViewById(R.id.p);
+//        w = findViewById(R.id.w);
+//        l = findViewById(R.id.l);
+//        pf = findViewById(R.id.pf);
+//        pa = findViewById(R.id.pa);
+//        pts = findViewById(R.id.pts);
+//
         inflate_data();
     }
+
+    public PointsRow(String sr_no, String team_name, String p, String w, String l, String pf, String pa, String pts) {
+        this.sr_no = sr_no;
+        this.team_name = team_name;
+        this.p = p;
+        this.w = w;
+        this.l = l;
+        this.pf = pf;
+        this.pa = pa;
+        this.pts = pts;
+    }
+
     public JSONObject getData(){
         return data;
     }
 
     public void inflate_data() {
         try {
-            sr_no.setText(data.getString("sr_no"));
-            team_name.setText(data.getString("team_name"));
-            p.setText(data.getString("p"));
-            w.setText(data.getString("w"));
-            l.setText(data.getString("l"));
-            pf.setText(data.getString("pf"));
-            pa.setText(data.getString("pa"));
-            pts.setText(data.getString("pts"));
+            String Sr_no = data.getString("sr_no");
+            String Team_name = data.getString("team_name");
+            String P = data.getString("p");
+            String W = data.getString("w");
+            String L = data.getString("l");
+            String Pf = data.getString("pf");
+            String Pa = data.getString("pa");
+            String Pts = data.getString("pts");
+
         } catch (JSONException e) {
-            sr_no.setText("");
-            team_name.setText("Team");
-            p.setText("P");
-            w.setText("W");
-            l.setText("L");
-            pf.setText("PF");
-            pa.setText("PA");
-            pts.setText("PTS");
+            e.printStackTrace();
         }
     }
 
+    public String getSr_no() {
+        return sr_no;
+    }
+
+    public String getTeam_name() {
+        return team_name;
+    }
+
+    public String getP() {
+        return p;
+    }
+
+    public String getW() {
+        return w;
+    }
+
+    public String getL() {
+        return l;
+    }
+
+    public String getPf() {
+        return pf;
+    }
+
+    public String getPa() {
+        return pa;
+    }
+
+    public String getPts() {
+        return pts;
+    }
 }
