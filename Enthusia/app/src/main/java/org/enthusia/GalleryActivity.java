@@ -116,7 +116,6 @@ public class GalleryActivity extends AppCompatActivity {
             }
         });
 
-        // Adding request to request queue
         AppController appController = new AppController(this);
         appController.addToRequestQueue(req);
     }

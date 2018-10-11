@@ -19,12 +19,10 @@ import java.util.List;
 
 public class MatchCard extends CardView{
 
-    JSONObject data;
-
-
-    public JSONObject getData(){
-        return data;
-    }
+//    JSONObject data;
+//    public JSONObject getData(){
+//        return data;
+//    }
 
     ArrayList<MatchCardElement> matchCardElements;
     public MatchCard(@NonNull Context context) {
@@ -33,9 +31,7 @@ public class MatchCard extends CardView{
         inflate_data();
     }
 
-    public void inflate_data(){
-
-
-
+    public void inflate_data() {
     }
 }
+

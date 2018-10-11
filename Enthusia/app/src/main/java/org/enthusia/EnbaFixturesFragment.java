@@ -15,12 +15,8 @@ import java.util.ArrayList;
 
 public class EnbaFixturesFragment extends Fragment {
 
-//    private OnFragmentInteractionListener mListener;
-
     public EnbaFixturesFragment() {
-        // Required empty public constructor
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,13 +26,12 @@ public class EnbaFixturesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_enba_fixtures, container, false);
         ArrayList<MatchCard> cards = new ArrayList<>();
         cards.add(new MatchCard(getActivity()));
         cards.add(new MatchCard(getActivity()));
         cards.add(new MatchCard(getActivity()));
-        EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(),cards);
+        EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
         ListView listView = v.findViewById(R.id.match_card_list_view);
         listView.setAdapter(adapter);
         return v;
