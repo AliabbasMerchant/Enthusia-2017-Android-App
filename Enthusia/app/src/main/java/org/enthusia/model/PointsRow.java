@@ -19,6 +19,8 @@ public class PointsRow extends ConstraintLayout {
     JSONObject data;
     public PointsRow(Context context) {
         super(context);
+        LayoutInflater.from(context).inflate(R.layout.match_card,this,true);
+        inflate_data();
     }
     public PointsRow(Context context, JSONObject data) {
         super(context);
@@ -40,17 +42,23 @@ public class PointsRow extends ConstraintLayout {
 
     public void inflate_data() {
         try {
-            String Sr_no = data.getString("sr_no");
-            String Team_name = data.getString("team_name");
-            String P = data.getString("p");
-            String W = data.getString("w");
-            String L = data.getString("l");
-            String Pf = data.getString("pf");
-            String Pa = data.getString("pa");
-            String Pts = data.getString("pts");
-
+            sr_no.setText(data.getString("sr_no"));
+            team_name.setText(data.getString("team_name"));
+            p.setText(data.getString("p"));
+            w.setText(data.getString("w"));
+            l.setText(data.getString("l"));
+            pf.setText(data.getString("pf"));
+            pa.setText(data.getString("pa"));
+            pts.setText(data.getString("pts"));
         } catch (JSONException e) {
-            e.printStackTrace();
+            sr_no.setText("");
+            team_name.setText("Team");
+            p.setText("P");
+            w.setText("W");
+            l.setText("L");
+            pf.setText("PF");
+            pa.setText("PA");
+            pts.setText("PTS");
         }
     }
 

@@ -17,6 +17,7 @@ import com.android.volley.toolbox.Volley;
 
 import org.enthusia.adapter.EnbaMatchCardAdapter;
 import org.enthusia.model.MatchCard;
+import org.enthusia.model.PointsRow;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,6 +47,7 @@ public class EnbaPointsFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_enba_points, container, false);
         getPointsData();
         if(pointsData!=null) {
+            ArrayList<PointsRow> pointsRows = new ArrayList<>();
             try {
                 JSONObject GroupA = pointsData.getJSONObject("Group A");
                 JSONObject GroupB = pointsData.getJSONObject("Group B");
