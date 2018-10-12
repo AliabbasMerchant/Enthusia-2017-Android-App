@@ -8,12 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import org.enthusia.R;
 import org.enthusia.Utility.CustomLinearLayoutManager;
 import org.enthusia.model.MatchCard;
 import org.enthusia.model.MatchCardElement;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,14 +27,13 @@ public class EnbaMatchCardAdapter extends BaseAdapter {
     private List<MatchCard> matchCards;
     private Activity activity;
     private LayoutInflater inflater;
-    private ArrayList<MatchCardElement> matchCardElements;
-    JSONObject data;
 
     public EnbaMatchCardAdapter(Activity activity, List<MatchCard> matchCards){
         super();
         this.activity = activity;
         this.matchCards = matchCards;
     }
+
     @Override
     public int getCount() {
         return matchCards.size();
@@ -53,13 +56,24 @@ public class EnbaMatchCardAdapter extends BaseAdapter {
         if (view == null)
             view = inflater.inflate(R.layout.match_card, null);
 
-
+        TextView date_tv = view.findViewById(R.id.date_tv);
         RecyclerView recyclerView = view.findViewById(R.id.match_card_element_recycler_view);
-        matchCardElements= new ArrayList<>();
-        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "20-20"));
-        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "30-30"));
-        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "40-40"));
-        matchCardElements.add(new MatchCardElement("Team Left", "Team Right", "50-50"));
+        MatchCard matchCard = matchCards.get(i);
+        ArrayList<MatchCardElement> matchCardElements = new ArrayList<>();
+
+        date_tv.setText(matchCard.getDate());
+        JSONArray array = matchCard.getData();
+        for(int k=0;k<array.length();k++) {
+            try {
+                JSONObject object = array.getJSONObject(i);
+                String team_left = object.getString("team_left");
+                String score = object.getString("score");
+                String team_right = object.getString("team_right");
+                matchCardElements.add(new MatchCardElement(team_left, team_right, score));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
 
         RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(layoutManager);
