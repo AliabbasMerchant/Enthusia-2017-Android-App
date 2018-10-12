@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class EnbaFixturesFragment extends Fragment {
     JSONObject fixturesData;
 
     public EnbaFixturesFragment() {
+
     }
 
     @Override
@@ -41,6 +43,15 @@ public class EnbaFixturesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_enba_fixtures, container, false);
+        ArrayList<MatchCard> cards;
+//        cards.add(new MatchCard(getActivity()));
+//        cards.add(new MatchCard(getActivity()));
+//        cards.add(new MatchCard(getActivity()));
+//        EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
+//        ListView listView = v.findViewById(R.id.match_card_list_view);
+//        listView.setAdapter(adapter);
+
+
         SwipeRefreshLayout swipeRefreshLayout = v.findViewById(R.id.fixtures_swipe_refresh);
         swipeRefreshLayout.setOnRefreshListener(()->{
             getFixturesData();
@@ -48,8 +59,11 @@ public class EnbaFixturesFragment extends Fragment {
         });
         getFixturesData();
 
+
+        ListView listView = v.findViewById(R.id.match_card_list_view);
+
         if(fixturesData!= null) {
-            ArrayList<MatchCard> cards = new ArrayList<>();
+            cards = new ArrayList<>();
             Iterator iterator = fixturesData.keys();
             while(iterator.hasNext()) {
                 String date = (String)iterator.next();
@@ -61,9 +75,21 @@ public class EnbaFixturesFragment extends Fragment {
                 }
             }
             EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
-            ListView listView = v.findViewById(R.id.match_card_list_view);
             listView.setAdapter(adapter);
         }
+
+        listView.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView absListView, int i) {
+
+            }
+
+            @Override
+            public void onScroll(AbsListView absListView, int i, int i1, int i2) {
+                int topRowVerticalPostition = (listView==null || listView.getChildCount() == 0 )? 0: listView.getChildAt(0).getTop();
+                swipeRefreshLayout.setEnabled(i == 0 && topRowVerticalPostition >=0);
+            }
+        });
         return v;
     }
 
