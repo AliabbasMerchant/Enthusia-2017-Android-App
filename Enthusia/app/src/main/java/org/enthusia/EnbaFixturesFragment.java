@@ -9,7 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -30,6 +32,8 @@ public class EnbaFixturesFragment extends Fragment {
     private static final String TAG = "EnbaFixturesFragment";
     SwipeRefreshLayout swipeRefreshLayout;
     JSONObject fixturesData;
+    ProgressBar progressBar;
+    LinearLayout cont;
 
     public EnbaFixturesFragment() {
 
@@ -53,16 +57,21 @@ public class EnbaFixturesFragment extends Fragment {
 //        ListView listView = v.findViewById(R.id.match_card_list_view);
 //        listView.setAdapter(adapter);
 
+        ListView listView = v.findViewById(R.id.match_card_list_view);
+        progressBar = v.findViewById(R.id.progressBar);
+        cont = v.findViewById(R.id.cont);
 
         swipeRefreshLayout = v.findViewById(R.id.fixtures_swipe_refresh);
         swipeRefreshLayout.setOnRefreshListener(()->{
+            progressBar.setVisibility(View.VISIBLE);
+            cont.setVisibility(View.GONE);
+
             getFixturesData();
 //            inflateFixturesData();
         });
         getFixturesData();
 //        getFixturesData();
 
-        ListView listView = v.findViewById(R.id.match_card_list_view);
 
         if(fixturesData!= null) {
             Log.d("Fixtures","Received Data!");
@@ -121,6 +130,7 @@ public class EnbaFixturesFragment extends Fragment {
             try {
                 fixturesData = new JSONObject(response);
                 inflateFixturesData();
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -148,6 +158,9 @@ public class EnbaFixturesFragment extends Fragment {
             ListView listView = getView().findViewById(R.id.match_card_list_view);
             listView.setAdapter(adapter);
             swipeRefreshLayout.setRefreshing(false);
+            progressBar.setVisibility(View.GONE);
+            cont.setVisibility(View.VISIBLE);
+//            swipeRefreshLayout.setVisibility(View.VISIBLE);
         }
     }
 
