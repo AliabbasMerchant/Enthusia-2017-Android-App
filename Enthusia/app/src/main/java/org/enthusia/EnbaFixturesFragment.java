@@ -57,9 +57,10 @@ public class EnbaFixturesFragment extends Fragment {
         swipeRefreshLayout = v.findViewById(R.id.fixtures_swipe_refresh);
         swipeRefreshLayout.setOnRefreshListener(()->{
             getFixturesData();
-            inflateFixturesData();
+//            inflateFixturesData();
         });
         getFixturesData();
+//        getFixturesData();
 
         ListView listView = v.findViewById(R.id.match_card_list_view);
 
@@ -79,6 +80,7 @@ public class EnbaFixturesFragment extends Fragment {
             EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
             listView.setAdapter(adapter);
         }
+//        inflateFixturesData();
 
         listView.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
@@ -118,6 +120,7 @@ public class EnbaFixturesFragment extends Fragment {
             Log.e(TAG, "onResponse: " + response);
             try {
                 fixturesData = new JSONObject(response);
+                inflateFixturesData();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -125,6 +128,7 @@ public class EnbaFixturesFragment extends Fragment {
             Log.e(TAG, "onResponse: " + "Could not fetch data");
             Toast.makeText(getContext(), "Please check your internet connection.", Toast.LENGTH_SHORT).show();
         });
+
         queue.add(sr);
     }
     void inflateFixturesData() {

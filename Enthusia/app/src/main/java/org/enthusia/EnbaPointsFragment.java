@@ -50,10 +50,8 @@ public class EnbaPointsFragment extends Fragment {
         points_swipe_refresh = v.findViewById(R.id.points_swipe_refresh);
         points_swipe_refresh.setOnRefreshListener(()->{
             getPointsData();
-            inflatePointsData();
         });
         getPointsData();
-        inflatePointsData();
 
         if (pointsData != null) {
             try {
@@ -108,6 +106,7 @@ public class EnbaPointsFragment extends Fragment {
             Log.e(TAG, "onResponse: " + response);
             try {
                 pointsData = new JSONObject(response);
+                inflatePointsData();
             } catch (JSONException e) {
                 e.printStackTrace();
             }
