@@ -63,8 +63,4 @@ public class EnbaPointsRowAdapter extends RecyclerView.Adapter<EnbaPointsRowAdap
     public int getItemCount() {
         return listOfTeams.size();
     }
-
-
-
-
 }

@@ -12,26 +12,39 @@ import org.enthusia.R;
 import org.enthusia.Utility.CustomLinearLayoutManager;
 import org.enthusia.adapter.EnbaMatchCardAdapter;
 import org.enthusia.adapter.EnbaMatchCardElementAdapter;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MatchCard extends CardView{
+    String date;
+    JSONArray data;
 
-//    JSONObject data;
-//    public JSONObject getData(){
-//        return data;
-//    }
+    public JSONArray getData(){
+        return data;
+    }
+    public String getDate(){
+        return date;
+    }
 
     ArrayList<MatchCardElement> matchCardElements;
     public MatchCard(@NonNull Context context) {
         super(context);
         LayoutInflater.from(context).inflate(R.layout.match_card,this,true);
-        inflate_data();
+//        inflate_data();
     }
 
-    public void inflate_data() {
+    public MatchCard(@NonNull Context context, JSONArray data, String date) {
+        super(context);
+        LayoutInflater.from(context).inflate(R.layout.match_card,this,true);
+        this.data = data;
+        this.date = date;
+//        inflate_data();
     }
+
+//    public void inflate_data() {
+//    }
 }
 
