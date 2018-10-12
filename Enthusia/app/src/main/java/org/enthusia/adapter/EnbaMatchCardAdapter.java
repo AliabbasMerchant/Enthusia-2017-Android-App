@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,7 +78,7 @@ public class EnbaMatchCardAdapter extends BaseAdapter {
 
         RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(view.getContext());
         recyclerView.setLayoutManager(layoutManager);
-
+        Log.d("EnbaMatchCardAdapter","recyclerView is set");
 //        recyclerView.addItemDecoration(new DividerItemDecoration(view.getContext(),
 //                DividerItemDecoration.VERTICAL));
 

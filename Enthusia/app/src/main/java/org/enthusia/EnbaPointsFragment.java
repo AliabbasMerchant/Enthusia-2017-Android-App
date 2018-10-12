@@ -26,6 +26,7 @@ import java.util.ArrayList;
 
 public class EnbaPointsFragment extends Fragment {
     private static final String TAG = "EnbaPointsFragment";
+    SwipeRefreshLayout points_swipe_refresh;
     JSONObject pointsData = null;
 
 //    private OnFragmentInteractionListener mListener;
@@ -44,7 +45,7 @@ public class EnbaPointsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_enba_points, container, false);
-        SwipeRefreshLayout points_swipe_refresh = v.findViewById(R.id.points_swipe_refresh);
+        points_swipe_refresh = v.findViewById(R.id.points_swipe_refresh);
         points_swipe_refresh.setOnRefreshListener(()->{
             getPointsData();
             inflatePointsData();
@@ -157,8 +158,12 @@ public class EnbaPointsFragment extends Fragment {
                 }
                 adapter = new EnbaPointsRowAdapter(rows);
                 recyclerView = getView().findViewById(R.id.points_card_list_view_B);
+                layoutManager = new CustomLinearLayoutManager(getView().getContext());
                 recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setAdapter(adapter);
+                if(points_swipe_refresh != null){
+                    points_swipe_refresh.setRefreshing(false);
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }

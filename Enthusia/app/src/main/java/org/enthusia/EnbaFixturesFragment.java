@@ -28,6 +28,7 @@ import java.util.Iterator;
 
 public class EnbaFixturesFragment extends Fragment {
     private static final String TAG = "EnbaFixturesFragment";
+    SwipeRefreshLayout swipeRefreshLayout;
     JSONObject fixturesData;
 
     public EnbaFixturesFragment() {
@@ -42,6 +43,7 @@ public class EnbaFixturesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View v =  inflater.inflate(R.layout.fragment_enba_fixtures, container, false);
         ArrayList<MatchCard> cards;
 //        cards.add(new MatchCard(getActivity()));
@@ -52,17 +54,17 @@ public class EnbaFixturesFragment extends Fragment {
 //        listView.setAdapter(adapter);
 
 
-        SwipeRefreshLayout swipeRefreshLayout = v.findViewById(R.id.fixtures_swipe_refresh);
+        swipeRefreshLayout = v.findViewById(R.id.fixtures_swipe_refresh);
         swipeRefreshLayout.setOnRefreshListener(()->{
             getFixturesData();
             inflateFixturesData();
         });
         getFixturesData();
 
-
         ListView listView = v.findViewById(R.id.match_card_list_view);
 
         if(fixturesData!= null) {
+            Log.d("Fixtures","Received Data!");
             cards = new ArrayList<>();
             Iterator iterator = fixturesData.keys();
             while(iterator.hasNext()) {
@@ -141,6 +143,7 @@ public class EnbaFixturesFragment extends Fragment {
             EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
             ListView listView = getView().findViewById(R.id.match_card_list_view);
             listView.setAdapter(adapter);
+            swipeRefreshLayout.setRefreshing(false);
         }
     }
 }
