@@ -146,4 +146,5 @@ public class EnbaFixturesFragment extends Fragment {
             swipeRefreshLayout.setRefreshing(false);
         }
     }
+
 }

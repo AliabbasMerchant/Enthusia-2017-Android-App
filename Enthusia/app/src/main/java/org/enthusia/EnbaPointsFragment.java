@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,6 +32,7 @@ public class EnbaPointsFragment extends Fragment {
 
 //    private OnFragmentInteractionListener mListener;
 
+
     public EnbaPointsFragment() {
         // Required empty public constructor
     }
@@ -51,6 +53,7 @@ public class EnbaPointsFragment extends Fragment {
             inflatePointsData();
         });
         getPointsData();
+        inflatePointsData();
 
         if (pointsData != null) {
             try {
@@ -68,11 +71,9 @@ public class EnbaPointsFragment extends Fragment {
                     String Pts = data.getString("pts");
                     rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
                 }
-                RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(v.getContext());
 
                 EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
                 RecyclerView recyclerView = v.findViewById(R.id.points_card_list_view);
-                recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setAdapter(adapter);
                 JSONObject GroupB = pointsData.getJSONObject("Group B");
 
@@ -91,7 +92,6 @@ public class EnbaPointsFragment extends Fragment {
                 }
                 adapter = new EnbaPointsRowAdapter(rows);
                 recyclerView = v.findViewById(R.id.points_card_list_view_B);
-                recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setAdapter(adapter);
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -159,6 +159,12 @@ public class EnbaPointsFragment extends Fragment {
                 adapter = new EnbaPointsRowAdapter(rows);
                 recyclerView = getView().findViewById(R.id.points_card_list_view_B);
                 layoutManager = new CustomLinearLayoutManager(getView().getContext());
+//                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()){
+//                    @Override
+//                    public boolean canScrollVertically() {
+//                        return false;
+//                    }
+//                });
                 recyclerView.setLayoutManager(layoutManager);
                 recyclerView.setAdapter(adapter);
                 if(points_swipe_refresh != null){
