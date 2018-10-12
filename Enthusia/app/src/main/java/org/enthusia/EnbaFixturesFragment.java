@@ -3,11 +3,13 @@ package org.enthusia;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -39,32 +41,17 @@ public class EnbaFixturesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_enba_fixtures, container, false);
-
+        SwipeRefreshLayout swipeRefreshLayout = v.findViewById(R.id.fixtures_swipe_refresh);
+        swipeRefreshLayout.setOnRefreshListener(()->{
+            getFixturesData();
+            inflateFixturesData();
+        });
         getFixturesData();
 
         if(fixturesData!= null) {
             ArrayList<MatchCard> cards = new ArrayList<>();
             Iterator iterator = fixturesData.keys();
             while(iterator.hasNext()) {
-                // TODO
-                /*
-                $data = array(
-		"Date_1" => array(
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>"")
-		),
-		"Date_2" => array(
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>""),
-		array("team_left"=>"", "score" => "", "team_right"=>"")
-		)
-	);
-                 */
                 String date = (String)iterator.next();
                 try {
                     JSONArray array = fixturesData.getJSONArray(date);
@@ -106,7 +93,28 @@ public class EnbaFixturesFragment extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        }, error -> Log.e(TAG, "onResponse: " + "Could not fetch data"));
+        }, error -> {
+            Log.e(TAG, "onResponse: " + "Could not fetch data");
+            Toast.makeText(getContext(), "Please check your internet connection.", Toast.LENGTH_SHORT).show();
+        });
         queue.add(sr);
+    }
+    void inflateFixturesData() {
+        if(fixturesData!= null) {
+            ArrayList<MatchCard> cards = new ArrayList<>();
+            Iterator iterator = fixturesData.keys();
+            while(iterator.hasNext()) {
+                String date = (String)iterator.next();
+                try {
+                    JSONArray array = fixturesData.getJSONArray(date);
+                    cards.add(new MatchCard(getActivity(), array, date));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+            EnbaMatchCardAdapter adapter = new EnbaMatchCardAdapter(getActivity(), cards);
+            ListView listView = getView().findViewById(R.id.match_card_list_view);
+            listView.setAdapter(adapter);
+        }
     }
 }
