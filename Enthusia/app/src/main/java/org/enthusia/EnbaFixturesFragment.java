@@ -2,6 +2,7 @@ package org.enthusia;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
@@ -136,7 +137,8 @@ public class EnbaFixturesFragment extends Fragment {
             }
         }, error -> {
             Log.e(TAG, "onResponse: " + "Could not fetch data");
-            Toast.makeText(getContext(), "Please check your internet connection.", Toast.LENGTH_SHORT).show();
+            Snackbar.make(getView(), "No internet connection!", Snackbar.LENGTH_SHORT).show();
+            swipeRefreshLayout.setRefreshing(false);
         });
 
         queue.add(sr);
