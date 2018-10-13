@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -20,17 +22,22 @@ import com.android.volley.toolbox.Volley;
 
 import org.enthusia.Utility.CustomLinearLayoutManager;
 import org.enthusia.adapter.EnbaPointsRowAdapter;
+import org.enthusia.adapter.EnbaPointsTableAdapter;
 import org.enthusia.model.PointsRow;
+import org.enthusia.model.PointsTable;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class EnbaPointsFragment extends Fragment {
     private static final String TAG = "EnbaPointsFragment";
     SwipeRefreshLayout points_swipe_refresh;
     JSONObject pointsData = null;
-
+    ArrayList<PointsTable> tables;
+    ListView listView;
 //    private OnFragmentInteractionListener mListener;
 
 
@@ -48,54 +55,67 @@ public class EnbaPointsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_enba_points, container, false);
+        listView = v.findViewById(R.id.points_table_list_view);
         points_swipe_refresh = v.findViewById(R.id.points_swipe_refresh);
         points_swipe_refresh.setOnRefreshListener(()->{
             getPointsData();
         });
         getPointsData();
 
-        if (pointsData != null) {
-            try {
-                JSONObject GroupA = pointsData.getJSONObject("Group A");
-                ArrayList<PointsRow> rows = new ArrayList<>();
-                for (int i = 1; i <= 5; i++) {
-                    JSONObject data = GroupA.getJSONObject(Integer.toString(i));
-                    String Sr_no = data.getString("sr_no");
-                    String Team_name = data.getString("team_name");
-                    String P = data.getString("p");
-                    String W = data.getString("w");
-                    String L = data.getString("l");
-                    String Pf = data.getString("pf");
-                    String Pa = data.getString("pa");
-                    String Pts = data.getString("pts");
-                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
-                }
+//        if (pointsData != null) {
+//            try {
+//                JSONObject GroupA = pointsData.getJSONObject("Group A");
+//                ArrayList<PointsRow> rows = new ArrayList<>();
+//                for (int i = 1; i <= 5; i++) {
+//                    JSONObject data = GroupA.getJSONObject(Integer.toString(i));
+//                    String Sr_no = data.getString("sr_no");
+//                    String Team_name = data.getString("team_name");
+//                    String P = data.getString("p");
+//                    String W = data.getString("w");
+//                    String L = data.getString("l");
+//                    String Pf = data.getString("pf");
+//                    String Pa = data.getString("pa");
+//                    String Pts = data.getString("pts");
+//                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
+//                }
+//
+//                EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
+//                RecyclerView recyclerView = v.findViewById(R.id.points_card_list_view);
+//                recyclerView.setAdapter(adapter);
+//                JSONObject GroupB = pointsData.getJSONObject("Group B");
+//
+//                rows = new ArrayList<>();
+//                for (int i = 1; i <= 5; i++) {
+//                    JSONObject data = GroupB.getJSONObject(Integer.toString(i));
+//                    String Sr_no = data.getString("sr_no");
+//                    String Team_name = data.getString("team_name");
+//                    String P = data.getString("p");
+//                    String W = data.getString("w");
+//                    String L = data.getString("l");
+//                    String Pf = data.getString("pf");
+//                    String Pa = data.getString("pa");
+//                    String Pts = data.getString("pts");
+//                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
+//                }
+//                adapter = new EnbaPointsRowAdapter(rows);
+//                recyclerView = v.findViewById(R.id.points_card_list_view_B);
+//                recyclerView.setAdapter(adapter);
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        }
+        listView.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView absListView, int i) {
 
-                EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
-                RecyclerView recyclerView = v.findViewById(R.id.points_card_list_view);
-                recyclerView.setAdapter(adapter);
-                JSONObject GroupB = pointsData.getJSONObject("Group B");
-
-                rows = new ArrayList<>();
-                for (int i = 1; i <= 5; i++) {
-                    JSONObject data = GroupB.getJSONObject(Integer.toString(i));
-                    String Sr_no = data.getString("sr_no");
-                    String Team_name = data.getString("team_name");
-                    String P = data.getString("p");
-                    String W = data.getString("w");
-                    String L = data.getString("l");
-                    String Pf = data.getString("pf");
-                    String Pa = data.getString("pa");
-                    String Pts = data.getString("pts");
-                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
-                }
-                adapter = new EnbaPointsRowAdapter(rows);
-                recyclerView = v.findViewById(R.id.points_card_list_view_B);
-                recyclerView.setAdapter(adapter);
-            } catch (JSONException e) {
-                e.printStackTrace();
             }
-        }
+
+            @Override
+            public void onScroll(AbsListView absListView, int i, int i1, int i2) {
+                int topRowVerticalPostition = (listView==null || listView.getChildCount() == 0 )? 0: listView.getChildAt(0).getTop();
+                points_swipe_refresh.setEnabled(i == 0 && topRowVerticalPostition >=0);
+            }
+        });
         return v;
     }
 
@@ -121,59 +141,75 @@ public class EnbaPointsFragment extends Fragment {
 
     void inflatePointsData() {
         if (pointsData != null) {
-            try {
-                JSONObject GroupA = pointsData.getJSONObject("Group A");
-                ArrayList<PointsRow> rows = new ArrayList<>();
-                for (int i = 1; i <= 5; i++) {
-                    JSONObject data = GroupA.getJSONObject(Integer.toString(i));
-                    String Sr_no = data.getString("sr_no");
-                    String Team_name = data.getString("team_name");
-                    String P = data.getString("p");
-                    String W = data.getString("w");
-                    String L = data.getString("l");
-                    String Pf = data.getString("pf");
-                    String Pa = data.getString("pa");
-                    String Pts = data.getString("pts");
-                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
-                }
-                RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(getView().getContext());
+//            try {
+//                JSONObject GroupA = pointsData.getJSONObject("Group A");
+//                ArrayList<PointsRow> rows = new ArrayList<>();
+//                for (int i = 1; i <= 5; i++) {
+//                    JSONObject data = GroupA.getJSONObject(Integer.toString(i));
+//                    String Sr_no = data.getString("sr_no");
+//                    String Team_name = data.getString("team_name");
+//                    String P = data.getString("p");
+//                    String W = data.getString("w");
+//                    String L = data.getString("l");
+//                    String Pf = data.getString("pf");
+//                    String Pa = data.getString("pa");
+//                    String Pts = data.getString("pts");
+//                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
+//                }
+//                RecyclerView.LayoutManager layoutManager = new CustomLinearLayoutManager(getView().getContext());
+//
+//                EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
+//                RecyclerView recyclerView = getView().findViewById(R.id.points_card_list_view);
+//                recyclerView.setLayoutManager(layoutManager);
+//                recyclerView.setAdapter(adapter);
+//                JSONObject GroupB = pointsData.getJSONObject("Group B");
+//
+//                rows = new ArrayList<>();
+//                for (int i = 1; i <= 5; i++) {
+//                    JSONObject data = GroupB.getJSONObject(Integer.toString(i));
+//                    String Sr_no = data.getString("sr_no");
+//                    String Team_name = data.getString("team_name");
+//                    String P = data.getString("p");
+//                    String W = data.getString("w");
+//                    String L = data.getString("l");
+//                    String Pf = data.getString("pf");
+//                    String Pa = data.getString("pa");
+//                    String Pts = data.getString("pts");
+//                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
+//                }
+//                adapter = new EnbaPointsRowAdapter(rows);
+//                recyclerView = getView().findViewById(R.id.points_card_list_view_B);
+//                layoutManager = new CustomLinearLayoutManager(getView().getContext());
+////                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()){
+////                    @Override
+////                    public boolean canScrollVertically() {
+////                        return false;
+////                    }
+////                });
+//                recyclerView.setLayoutManager(layoutManager);
+//                recyclerView.setAdapter(adapter);
+//                if(points_swipe_refresh != null){
+//                    points_swipe_refresh.setRefreshing(false);
+//                }
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+            tables = new ArrayList<>();
+            Iterator iterator = pointsData.keys();
+            while(iterator.hasNext()){
+                String group_name = (String) iterator.next();
+                try{
+                    JSONObject object = pointsData.getJSONObject(group_name);
+                    tables.add(new PointsTable( group_name, object));
 
-                EnbaPointsRowAdapter adapter = new EnbaPointsRowAdapter(rows);
-                RecyclerView recyclerView = getView().findViewById(R.id.points_card_list_view);
-                recyclerView.setLayoutManager(layoutManager);
-                recyclerView.setAdapter(adapter);
-                JSONObject GroupB = pointsData.getJSONObject("Group B");
-
-                rows = new ArrayList<>();
-                for (int i = 1; i <= 5; i++) {
-                    JSONObject data = GroupB.getJSONObject(Integer.toString(i));
-                    String Sr_no = data.getString("sr_no");
-                    String Team_name = data.getString("team_name");
-                    String P = data.getString("p");
-                    String W = data.getString("w");
-                    String L = data.getString("l");
-                    String Pf = data.getString("pf");
-                    String Pa = data.getString("pa");
-                    String Pts = data.getString("pts");
-                    rows.add(new PointsRow(Sr_no, Team_name, P, W, L, Pf, Pa, Pts));
+                }catch (JSONException e)
+                {
+                    e.printStackTrace();
                 }
-                adapter = new EnbaPointsRowAdapter(rows);
-                recyclerView = getView().findViewById(R.id.points_card_list_view_B);
-                layoutManager = new CustomLinearLayoutManager(getView().getContext());
-//                recyclerView.setLayoutManager(new LinearLayoutManager(getContext()){
-//                    @Override
-//                    public boolean canScrollVertically() {
-//                        return false;
-//                    }
-//                });
-                recyclerView.setLayoutManager(layoutManager);
-                recyclerView.setAdapter(adapter);
-                if(points_swipe_refresh != null){
-                    points_swipe_refresh.setRefreshing(false);
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
             }
+            EnbaPointsTableAdapter adapter= new EnbaPointsTableAdapter(tables, getActivity());
+            listView.setAdapter(adapter);
+            points_swipe_refresh.setRefreshing(false);
         }
     }
 

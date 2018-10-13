@@ -131,7 +131,6 @@ public class EnbaFixturesFragment extends Fragment {
             try {
                 fixturesData = new JSONObject(response);
                 inflateFixturesData();
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -140,7 +139,6 @@ public class EnbaFixturesFragment extends Fragment {
             Snackbar.make(getView(), "No internet connection!", Snackbar.LENGTH_SHORT).show();
             swipeRefreshLayout.setRefreshing(false);
         });
-
         queue.add(sr);
     }
     void inflateFixturesData() {
