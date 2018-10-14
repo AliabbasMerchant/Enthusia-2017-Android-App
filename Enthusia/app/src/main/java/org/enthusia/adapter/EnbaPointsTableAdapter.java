@@ -77,7 +77,7 @@ public class EnbaPointsTableAdapter extends BaseAdapter {
 
         holder.group_tv.setText(table.getGroup_name());
         JSONObject array = table.getData();
-        for(int k = 1; k<=5;k++){
+        for(int k = 1; k<= array.length();k++){
             try{
                 JSONObject data = array.getJSONObject(Integer.toString(k));
                 String Sr_no = data.getString("sr_no");

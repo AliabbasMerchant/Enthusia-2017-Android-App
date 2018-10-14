@@ -1,27 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context=".EnbaPointsFragment"--><!--&gt;-->
 
-
-<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/points_swipe_refresh"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".EnbaPointsFragment">
+    android:layout_height="wrap_content">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:indeterminate="true" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/points_swipe_refresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        tools:context=".EnbaPointsFragment">
 
-        <ListView
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/points_table_list_view">
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-        </ListView>
-    </LinearLayout>
-</android.support.v4.widget.SwipeRefreshLayout><!--</FrameLayout>-->
+            <ListView
+                android:id="@+id/points_table_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout><!--</FrameLayout>-->
+</FrameLayout>

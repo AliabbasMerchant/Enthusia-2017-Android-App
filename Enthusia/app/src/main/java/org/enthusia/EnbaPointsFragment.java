@@ -12,7 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -35,9 +38,12 @@ import java.util.Iterator;
 public class EnbaPointsFragment extends Fragment {
     private static final String TAG = "EnbaPointsFragment";
     SwipeRefreshLayout points_swipe_refresh;
+    ProgressBar progressBar;
+    LinearLayout cont;
     JSONObject pointsData = null;
     ArrayList<PointsTable> tables;
     ListView listView;
+    TextView statsTextView;
 //    private OnFragmentInteractionListener mListener;
 
 
@@ -56,8 +62,10 @@ public class EnbaPointsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_enba_points, container, false);
         listView = v.findViewById(R.id.points_table_list_view);
+        cont = v.findViewById(R.id.linearLayout);
+        progressBar = v.findViewById(R.id.progressBar);
         points_swipe_refresh = v.findViewById(R.id.points_swipe_refresh);
-        points_swipe_refresh.setOnRefreshListener(()->{
+        points_swipe_refresh.setOnRefreshListener(() -> {
             getPointsData();
         });
         getPointsData();
@@ -112,8 +120,8 @@ public class EnbaPointsFragment extends Fragment {
 
             @Override
             public void onScroll(AbsListView absListView, int i, int i1, int i2) {
-                int topRowVerticalPostition = (listView==null || listView.getChildCount() == 0 )? 0: listView.getChildAt(0).getTop();
-                points_swipe_refresh.setEnabled(i == 0 && topRowVerticalPostition >=0);
+                int topRowVerticalPostition = (listView == null || listView.getChildCount() == 0) ? 0 : listView.getChildAt(0).getTop();
+                points_swipe_refresh.setEnabled(i == 0 && topRowVerticalPostition >= 0);
             }
         });
         return v;
@@ -121,6 +129,10 @@ public class EnbaPointsFragment extends Fragment {
 
 
     void getPointsData() {
+        points_swipe_refresh.setRefreshing(true);
+        progressBar.setVisibility(View.VISIBLE);
+        cont.setVisibility(View.GONE);
+
         RequestQueue queue = Volley.newRequestQueue(getActivity());
         String pointsURL = getResources().getString(R.string.pointsURL);
         StringRequest sr = new StringRequest(Request.Method.GET, pointsURL, response -> {
@@ -194,22 +206,37 @@ public class EnbaPointsFragment extends Fragment {
 //            } catch (JSONException e) {
 //                e.printStackTrace();
 //            }
-            tables = new ArrayList<>();
-            Iterator iterator = pointsData.keys();
-            while(iterator.hasNext()){
-                String group_name = (String) iterator.next();
-                try{
-                    JSONObject object = pointsData.getJSONObject(group_name);
-                    tables.add(new PointsTable( group_name, object));
+            try {
+//                statsTextView = getView().findViewById(R.id.stats_text_view);
+//                String text = pointsData.getString("stats");
+//                statsTextView.setText(text);
 
-                }catch (JSONException e)
-                {
-                    e.printStackTrace();
+
+                tables = new ArrayList<>();
+                Iterator iterator;
+
+                iterator = pointsData.getJSONObject("groups").keys();
+
+                while (iterator.hasNext()) {
+                    String group_name = (String) iterator.next();
+                    try {
+                        JSONObject object = pointsData.getJSONObject("groups").getJSONObject(group_name);
+                        tables.add(new PointsTable(group_name, object));
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                 }
+                EnbaPointsTableAdapter adapter = new EnbaPointsTableAdapter(tables, getActivity());
+                listView.setAdapter(adapter);
+
+
+                points_swipe_refresh.setRefreshing(false);
+                progressBar.setVisibility(View.GONE);
+                cont.setVisibility(View.VISIBLE);
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
-            EnbaPointsTableAdapter adapter= new EnbaPointsTableAdapter(tables, getActivity());
-            listView.setAdapter(adapter);
-            points_swipe_refresh.setRefreshing(false);
         }
     }
 

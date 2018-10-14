@@ -142,7 +142,7 @@ public class EnbaFixturesFragment extends Fragment {
         queue.add(sr);
     }
     void inflateFixturesData() {
-        if(fixturesData!= null) {
+        if(fixturesData!= null && getActivity()!=null) {
             ArrayList<MatchCard> cards = new ArrayList<>();
             Iterator iterator = fixturesData.keys();
             while(iterator.hasNext()) {

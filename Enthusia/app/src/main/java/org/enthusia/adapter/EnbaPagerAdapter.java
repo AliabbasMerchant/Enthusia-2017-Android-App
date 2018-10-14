@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import org.enthusia.EnbaFixturesFragment;
 import org.enthusia.EnbaPointsFragment;
 import org.enthusia.EnbaPoolFragment;
+import org.enthusia.EnbaStatsFragment;
 
 public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
     public EnbaPagerAdapter(FragmentManager fm) {
@@ -17,23 +18,32 @@ public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if(position == 1 )
+
+        if (position == 0)
+            return new EnbaFixturesFragment();
+        if (position == 1)
             return new EnbaPointsFragment();
-        return new EnbaFixturesFragment();
+
+        return new EnbaStatsFragment();
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0: return "Matches";
-            case 1: return "Points Table";
-            default: return null;
+        switch (position) {
+            case 0:
+                return "Matches";
+            case 1:
+                return "Table";
+            case 2:
+                return "MVP";
+            default:
+                return null;
         }
     }
 }
