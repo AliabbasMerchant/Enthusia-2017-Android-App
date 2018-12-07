@@ -1,43 +1,55 @@
-Secretary
+Secretaries
 #
-Aman Shaikh,Ruhi Dongre,Aditi Sharma
+Maithili Khade,Dhaval Bisure,Bhavik Dhodi
 %
 Treasurers
 #
-Shaunak Soman,Madhav Goradia
+Neel Shah,Rutvik Kamble
 %
-Chief Executives
+Executive Directors
 #
-Archit Sidhwa,Vedant Patil,Nisha Sabu
+Shravani Sawant,Mayur Satra, Kishan Dhanrajani
 %
-HOD - Sponsorship
+Public Relations Chief Coordinators
 #
-Meet Shah,Shivani Patel,Neel Gada,Shreyashree Chiplunkar
+Aditya Sood,Ninad Chintawar,Anirudh Nair,Karuna Kukreja,Mayuri Sangle
 %
-HOD - Public Relations
+Design Chief Coordinators
 #
-Niharika Jangala,Apeksha Karekar,Ujjwal Patil,Gaurang Karwande,Devang Sankhe
+Vedant Patil,Humaira Sayyed,Anish Narsimhan,Aditya Pahurkar,Pranjal Rajan
 %
-HOD - Design
+Marketing Chief Coordinators
 #
-Vignesh Tirukkonda,Mihir Deshpande,Ujwala Shinde,Jenil Gala
+Archita Ajgaonkar,Pratik Shah,Pratiksha Mishra,Shrikanth Muralidharan,Manan Mehta
 %
-HOD - Marketing
+Administrative Officers
 #
-Adhish Natekar,Mervin Dalmet,Jay Pankaj Desai,Karthik Srinivasan,Sarvadnya Kulkarni
+Ashutosh Patil,Shubham Jangle,Shivam Navalkar,Tejas Kudnar,Ashutosh Tayade,Aniruddh Nagdeote,Manan Sharma,Yash Tendulkar,Rahul Yadav
 %
-Media Strategist
+Event Chief Coordinators
 #
-Dipti Kulkarni,
+Dhanashree Sargar,Kunal Ramteke,Pranav Chougule,Pratik Patil,Rahul Yadav,Rupesh Shunam,Sanket Dnyanwadkar,Shraddha Gawade,Shreya Modak,Yash Gupte,Sagar Patil,Chinmay Ghanekar,Pranay Kankariya,Nikhil Bang,Pratik Waghmare
 %
-HOD - Operations
+Diploma Chief Coordinators
 #
-Mudit Pruthi,Gurleen Singh Oberoi,Saurabh Deshmukh,Divyesh Shah,Shubham Shirore,Yogesh Chincholkar, Ashutosh Phalke 
+Disha Ghadge,Kritik Chavan, Tanvi Rajendra Jadhav
 %
-HOD - Events
+Sponsorship Chief Coordinators
 #
-Mudita Mehta,Tushar Chaudhari,Hrishikesh Hundekari,Abdullah Khan,Maitree Pasad,Saurav Dhakane,Jai Srivastav,Dhananjay Rajput,Sanket Chaudhari,Nikhil Vankayala,Tejas Panchbhai
+Ranjana Moolya,Samkit Shah,Sarita Bendga,Vinayak Borhade,Kushaal Shroff
 %
-Diploma Chief Coordinator
+Development Team
 #
-Krisha Choksi,Vishal Shingte,Sakshi Sangle,Riya Kamble
+Vineet Sethi,Humaira Sayyed,Shreya Khatal,Prachi Sarwade, Yogesh Mangnaik, Nisarg Mistry, Sanidhya Sharma, Aliabbas Merchant
+%
+Creative Heads
+#
+Mrunmayi Sahare,Kajal Chavan,Ashwini Bhondve,Reha Jasoriya
+%
+Photomedia Heads
+#
+Rashmi Shinde,Pratik Patil
+%
+MnC CC
+#
+Sourav Sankpal

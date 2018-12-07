@@ -51,7 +51,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Shravani Sawant "
+                            android:text="Pranjal Shinde"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -60,7 +60,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7738508303"
+                            android:text="8669879562"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -78,7 +78,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Kushaal Shroff"
+                            android:text="Ritwik Jog"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -87,7 +87,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="8976022098"
+                            android:text="7022255902"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -159,7 +159,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Akash jadhav "
+                            android:text="Prerna Payer"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -168,7 +168,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="8286560684"
+                            android:text="8433851245"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -186,7 +186,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Onkar Rokde"
+                            android:text="Yash Ambekar"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -196,7 +196,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9004855154"
+                            android:text="9833907797"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -269,7 +269,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Shivam Nawalkar"
+                            android:text="Palash Mundhada"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -278,7 +278,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9689755783"
+                            android:text="9588415638"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -296,7 +296,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Vaishnavi Teli"
+                            android:text="Rutuja Dubal"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -305,7 +305,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9869763279"
+                            android:text="9921684145"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -359,7 +359,7 @@
                         android:background="@color/card_color"
                         android:gravity="center_vertical"
                         android:padding="20dp"
-                        android:text="Computer"
+                        android:text="Computers"
                         android:textColor="#ffffff"
                         android:textSize="16sp" />
 
@@ -376,7 +376,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Bhavik Dhodi"
+                            android:text="Saurabh Kulkarni"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -385,37 +385,37 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9619421665"
+                            android:text="7045360320"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="70dp"
-                        android:gravity="center_vertical"
-                        android:paddingBottom="20dp"
-                        android:paddingLeft="20dp"
-                        android:paddingRight="20dp"
-                        android:paddingTop="20dp">
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingBottom="20dp"-->
+                        <!--android:paddingLeft="20dp"-->
+                        <!--android:paddingRight="20dp"-->
+                        <!--android:paddingTop="20dp">-->
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Shreya Khatal"
-                            android:textColor="#111111"
-                            android:textSize="16sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="Shreya Khatal"-->
+                            <!--android:textColor="#111111"-->
+                            <!--android:textSize="16sp" />-->
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="launchDialer"
-                            android:text="8600023464"
-                            android:textColor="#0011ff"
-                            android:textSize="16sp" />
-                    </LinearLayout>
+                        <!--<TextView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:onClick="launchDialer"-->
+                            <!--android:text="8600023464"-->
+                            <!--android:textColor="#0011ff"-->
+                            <!--android:textSize="16sp" />-->
+                    <!--</LinearLayout>-->
                 </LinearLayout>
 
             </FrameLayout>
@@ -436,7 +436,7 @@
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:padding="20dp"
-                        android:text="Computer"
+                        android:text="Computers"
                         android:textColor="#ffffff"
                         android:textSize="16sp" />
 
@@ -483,7 +483,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Devdatta Batte"
+                            android:text="Bakul Yenarkar"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -492,7 +492,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7448220889"
+                            android:text="7588765088"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -510,7 +510,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Navyaashree Shetty"
+                            android:text="Sarang Kansara"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -519,7 +519,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="8291399204"
+                            android:text="9145560778"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -590,7 +590,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Sharwani Tanalkar "
+                            android:text="Jidnyasa Phalak"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -599,7 +599,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7977422564"
+                            android:text="9372370423"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -617,7 +617,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Rahul Jogdand"
+                            android:text="Pakshal Jain"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -626,7 +626,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9987988820"
+                            android:text="9819171565"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -697,7 +697,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Sarita S. Bendga"
+                            android:text="Tanmay Nunhariya"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -706,7 +706,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7767947481"
+                            android:text="7218200629"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -724,7 +724,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Adithya Arya "
+                            android:text="Shreya Lahoti"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -733,7 +733,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7977326595"
+                            android:text="7972441263"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -804,7 +804,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Anjali Bhalerao"
+                            android:text="Shubham Dcosta"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -813,7 +813,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7057890866"
+                            android:text="9604701742"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -831,7 +831,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Akshay Dhillon"
+                            android:text="Kshitija Mhatre"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -840,7 +840,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9768964812"
+                            android:text="8369591528"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -911,7 +911,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Kishan Dhanrajani"
+                            android:text="Sanket Inamdar"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -920,7 +920,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="8857916628"
+                            android:text="8605702490"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -938,7 +938,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Rajeshwari Nehete"
+                            android:text="Urvi Mhaskar"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -947,7 +947,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9423978390"
+                            android:text="7666393099"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -1018,7 +1018,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Anjali Waghela"
+                            android:text="Nidhi Jhawar"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -1027,7 +1027,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="8369608813"
+                            android:text="8999439030"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -1045,7 +1045,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Heet shah"
+                            android:text="Adit Khalkar"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -1054,7 +1054,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="8879233627"
+                            android:text="9405308816"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>
@@ -1124,7 +1124,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Rashmi Shinde"
+                            android:text="Kadambari Choudhari"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -1133,9 +1133,11 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="9404245789"
+                            android:text="9834193604"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
+
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -1151,7 +1153,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Sagar patil"
+                            android:text="Dhananjay Joshi"
                             android:textColor="#111111"
                             android:textSize="16sp" />
 
@@ -1160,7 +1162,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:onClick="launchDialer"
-                            android:text="7755987509"
+                            android:text="9518322548"
                             android:textColor="#0011ff"
                             android:textSize="16sp" />
                     </LinearLayout>

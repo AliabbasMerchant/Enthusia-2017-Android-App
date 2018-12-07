@@ -132,7 +132,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Aishwarya Rajguru"
+                                android:text="Aryan Kokane"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -142,7 +142,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8898910477"
+                                android:text="9930520570"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -157,7 +157,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Yash Tendulkar"
+                                android:text="Yash Mange"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -167,7 +167,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9168508042"
+                                android:text="9320012336"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -182,7 +182,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Ashutosh Tayade"
+                                android:text="Krish Choksi"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -192,7 +192,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8007509785"
+                                android:text="9769190009"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -207,7 +207,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Rutvik Kamble"
+                                android:text="Saiyam Nahata"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -217,7 +217,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8976817579"
+                                android:text="7738126804"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -232,7 +232,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Aditya Sood"
+                                android:text="Maitraya Desai"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -242,7 +242,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9867227455"
+                                android:text="9619037181"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -257,7 +257,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Mayur Satra"
+                                android:text="Prithvi Malhotra"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -267,32 +267,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8369525219"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Anirudh Nair"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="8655352481"
+                                android:text="9769925844"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -490,7 +465,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Shrikanth Muralidharan"
+                                android:text="Priyanka Khadse"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -500,7 +475,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8779744732"
+                                android:text="9403468077"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -515,7 +490,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Ashutosh Patil"
+                                android:text="Muskan Jain"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -525,7 +500,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9423152531"
+                                android:text="9869845552"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -540,7 +515,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sarita Bendga"
+                                android:text="Ritwik Jog"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -550,7 +525,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7767947481"
+                                android:text="7022255902"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -565,7 +540,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Shubham Jangale"
+                                android:text="Dhananjay Joshi"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -575,7 +550,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9987646236"
+                                android:text="9518322458"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -590,7 +565,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Chinmay madavi"
+                                android:text="Varun Motghare"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -600,7 +575,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9049999645"
+                                android:text="9764529137"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -615,7 +590,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Maithili Khade "
+                                android:text="Pranali Ghodke"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -625,7 +600,7 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7741904644"
+                                android:text="9834985449"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -640,7 +615,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Pranav Chougule"
+                                android:text="Ankita Pandey"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -650,7 +625,31 @@
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9764000773"
+                                android:text="7039486422"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Mihir Gaikwad"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="9082384992"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -747,7 +746,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            folding-cell:additionalFlipsCount="5"
+            folding-cell:additionalFlipsCount="7"
             folding-cell:animationDuration="1300"
             folding-cell:backSideColor="@color/bgBackSideColor"
             folding-cell:cameraHeight="30">
@@ -851,7 +850,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Vedant Patil"
+                                android:text="Ameya Iyer"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -861,7 +860,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9960790997"
+                                android:text="9764180033"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -876,7 +875,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sanket Dnyanwadkar"
+                                android:text="Rushikesh Amrutkar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -886,7 +885,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9767857463"
+                                android:text="8329331890"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -901,7 +900,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sagar Patil"
+                                android:text="Saket Naik"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -911,7 +910,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7755987509"
+                                android:text="9930031628"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -926,7 +925,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Pratik Shah"
+                                android:text="Subodh Wandile"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -936,57 +935,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9870911988"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:gravity="center_vertical">-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="0dp"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:layout_weight="1"-->
-                                <!--android:padding="10dp"-->
-                                <!--android:text="Annie Atram"-->
-                                <!--android:textColor="#111111"-->
-                                <!--android:textSize="16sp" />-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="0dp"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:layout_weight="1"-->
-                                <!--android:onClick="launchDialer"-->
-                                <!--android:padding="10dp"-->
-                                <!--android:text="9004263797"-->
-                                <!--android:textColor="#0011ff"-->
-                                <!--android:textSize="16sp" />-->
-                        <!--</LinearLayout>-->
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Rupesh Shunam"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="8983061902"
+                                android:text="7775973235"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1001,7 +950,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Samkit Shah "
+                                android:text="Aniket Mandal"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1011,7 +960,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8108811390"
+                                android:text="8419931241"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1026,7 +975,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Shriram Deshmukh"
+                                android:text="Parth Dalia"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1036,7 +985,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9637530319"
+                                android:text="9167270347"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1051,7 +1000,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Manan Mehta "
+                                android:text="Atharva Vhatkar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1061,35 +1010,10 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8976007816"
+                                android:text="9757217046"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
-
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:gravity="center_vertical">-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="0dp"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:layout_weight="1"-->
-                                <!--android:padding="10dp"-->
-                                <!--android:text="Navyaashree Shetty "-->
-                                <!--android:textColor="#111111"-->
-                                <!--android:textSize="16sp" />-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="0dp"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:layout_weight="1"-->
-                                <!--android:onClick="launchDialer"-->
-                                <!--android:padding="10dp"-->
-                                <!--android:text="8291399204"-->
-                                <!--android:textColor="#0011ff"-->
-                                <!--android:textSize="16sp" />-->
-                        <!--</LinearLayout>-->
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -1101,7 +1025,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Pinakin Kataria"
+                                android:text="Swapnil Magare"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1111,7 +1035,82 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7400335729"
+                                android:text="9156981726"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Saurabh Gavande"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="7083556705"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Kajol Aher"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="7083022373"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Shivprasad kute"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="9518989361"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1308,7 +1307,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Rohan Dhanore"
+                                android:text="Akhilesh Rangari"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1318,7 +1317,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9975297305"
+                                android:text="9834937386"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1333,7 +1332,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Vishakha Gidaye"
+                                android:text="Shruti Dhote"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1343,7 +1342,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8652171246"
+                                android:text="7875556368"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1358,7 +1357,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Siddhant Patil"
+                                android:text="Gaurav Sawant"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1368,7 +1367,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9420008282"
+                                android:text="9821909192"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1383,7 +1382,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Hrishikesh Sakharpe"
+                                android:text="Ojasvi Pandya"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1393,7 +1392,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9764447505"
+                                android:text="7900017383"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1408,7 +1407,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Shraddha Gawade"
+                                android:text="Keval Shah"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1418,7 +1417,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7020090458"
+                                android:text="9082687258"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1433,7 +1432,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Prajwal Patil "
+                                android:text="Pakshal Jain"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1443,7 +1442,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9422737279"
+                                android:text="9819171565"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1458,7 +1457,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Aniruddh Nagdeote "
+                                android:text="Prathamesh Desale"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1468,35 +1467,11 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8237516048"
+                                android:text="9075990196"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Mrunmayi Sahare "
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9503247074"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
 
                     </LinearLayout>
                     <!-- divider line -->
@@ -1693,7 +1668,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Vineet Sethi"
+                                android:text="Ritu Gala"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1703,7 +1678,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9987688321"
+                                android:text="9029401396"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1718,7 +1693,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Mayank Mahure"
+                                android:text="Sai Pawar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1728,7 +1703,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7741978761"
+                                android:text="8975852925"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1743,7 +1718,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Raj Katakwar"
+                                android:text="Aryan Mehta"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1753,7 +1728,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9975223554"
+                                android:text="9920833383"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -1768,7 +1743,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Yash Gupte"
+                                android:text="Saiprasad Duduka"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -1778,85 +1753,11 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7738805037"
+                                android:text="9653263475"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Hiral Pranami"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9920970927"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Badhrinarayan M"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="8879098020"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Onkar Bangar"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9689050769"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
                     </LinearLayout>
                     <!-- divider line -->
                     <ImageView
@@ -2053,7 +1954,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Ankit Parekh"
+                                android:text="Palash"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2063,7 +1964,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7977573854"
+                                android:text="9588415638"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2078,7 +1979,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Vinayak Borhade"
+                                android:text="Nikhil"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2088,7 +1989,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7506644098"
+                                android:text="9421737976"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2103,7 +2004,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Chirag Jain"
+                                android:text="Saurabh "
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2113,60 +2014,12 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9405666663"
+                                android:text="7045360320"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Pranay Kankariya"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9004759001"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Rushikesh Iname"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9552905911"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
                     </LinearLayout>
                     <!-- divider line -->
                     <ImageView
@@ -2360,7 +2213,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sahil Jadhav"
+                                android:text="Tanmay Thakur"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2370,7 +2223,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7039124564"
+                                android:text="9821691359"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2385,7 +2238,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Akash Jadhav"
+                                android:text="Sunil Sahu"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2395,7 +2248,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8286560684"
+                                android:text="7045936317"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2410,7 +2263,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Hrithik Suvarna"
+                                android:text="Shantanu sawalkar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2420,85 +2273,13 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9004873689"
+                                android:text="7045486604"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Abhishek Mirgude"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="8208046744"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Pranit Paste"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9594238915"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Rohit Rathod"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="7588782610"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
                     </LinearLayout>
                     <!-- divider line -->
                     <ImageView
@@ -2694,7 +2475,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Ketan Deshpande"
+                                android:text="Shreya Lahoti"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2704,7 +2485,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7769885594"
+                                android:text="7972441263"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2719,7 +2500,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Pratik Patil"
+                                android:text="Pratim Ugale"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2729,7 +2510,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7678042382"
+                                android:text="7045580782"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2927,7 +2708,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Shreya Modak"
+                                android:text="Bakul Yenarkar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2937,7 +2718,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9987819421"
+                                android:text="7588765088"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2952,7 +2733,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Manan Sharma"
+                                android:text="Abhinav Madavi"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2962,7 +2743,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8291491649"
+                                android:text="7219428627"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -2977,7 +2758,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Rushikesh Jagadale"
+                                android:text="Ashwini Khandave"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -2987,7 +2768,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7558450775"
+                                android:text="7218687115"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -3185,7 +2966,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sania Shaikh"
+                                android:text="Hriday Vyas"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3195,7 +2976,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8655349983"
+                                android:text="9833134884"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -3209,7 +2990,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Reha Jasoriya"
+                                android:text="Sanket khairnar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3219,35 +3000,11 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7715052793"
+                                android:text="9420725351"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Pratik Waghmare"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="8623023005"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
                     </LinearLayout>
                     <!-- divider line -->
                     <ImageView
@@ -3443,7 +3200,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Dhanashree Sargar"
+                                android:text="Vaishnavi Gawade"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3453,7 +3210,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9969398236"
+                                android:text="8879090297"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -3468,7 +3225,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sneha Prabhu"
+                                android:text="Nafisa Sunelwala"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3478,7 +3235,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9664893437"
+                                android:text="7083527585"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -3493,7 +3250,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Karuna Kukreja"
+                                android:text="Gayatri Sonawane"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3503,7 +3260,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9920598567"
+                                android:text="9833593559"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -3702,7 +3459,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Bhavik Dhodi"
+                                android:text="Ansh Patel"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3712,11 +3469,10 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9619421665"
+                                android:text="8879327017"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -3727,7 +3483,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Chinmay Ghanekar"
+                                android:text="Harsh Parikh"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3737,11 +3493,10 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9820619436"
+                                android:text="9820337481"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -3752,7 +3507,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Aishwarya Rajguru"
+                                android:text="Kunal Valse"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3762,11 +3517,10 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8898910477"
+                                android:text="8828186061"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -3777,7 +3531,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Shivam Nawalkar "
+                                android:text="Nirav Mithari"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3787,11 +3541,10 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9689755783"
+                                android:text="8275360699"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -3802,7 +3555,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Anish Narasimhan"
+                                android:text="Saurabh Mane"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -3812,35 +3565,12 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8652137667"
+                                android:text="8355929479"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Ninad  Chintawar "
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="7977427932"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
                     </LinearLayout>
                     <!-- divider line -->
                     <ImageView
@@ -4036,7 +3766,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Rashmi Shinde"
+                                android:text="Yash Bhor"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4046,7 +3776,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9404245789"
+                                android:text="9137814011"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4061,7 +3791,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Kunal Ramteke"
+                                android:text="Asmit Patil"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4071,7 +3801,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7276133743"
+                                android:text="8652092462"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4086,7 +3816,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Saumya Akubattini"
+                                android:text="Ajinkya Shah"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4096,7 +3826,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8087362570"
+                                android:text="9834888153"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4111,7 +3841,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Nikhil Bang"
+                                android:text="Rutuja Dubal"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4121,7 +3851,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9730977665"
+                                android:text="9921684145"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4136,7 +3866,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Tejas Kudnar"
+                                android:text="Shubhangi Khairnar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4146,7 +3876,55 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7219195082"
+                                android:text="9823018517"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Snehal Chaudhari"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="9922927933"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Tanvi Mangaonkar"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="7767090898"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4345,7 +4123,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Mrunal Kshirsagar"
+                                android:text="Sarang kansara"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4355,7 +4133,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8828222471"
+                                android:text="9145560778"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4370,7 +4148,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Aman Framewala"
+                                android:text="Saish"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4380,32 +4158,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9757065584"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Yash Dani"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="8082054808"
+                                android:text="9594970218"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4603,7 +4356,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Siddhesh Sawant"
+                                android:text="Aakash Sabat"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4613,7 +4366,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8291245282"
+                                android:text="8850941337"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4628,7 +4381,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Bhagyashree Sapate"
+                                android:text="Nidhi Jhawar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4638,7 +4391,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7448050396"
+                                android:text="8999439030"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4653,7 +4406,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Nidhi Shivaji More"
+                                android:text="Rajesh Ghumanwad"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4663,7 +4416,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8689878551"
+                                android:text="9765750982"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4678,7 +4431,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Devdatta Batte"
+                                android:text="Pooja Khadke"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4688,85 +4441,13 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="7448220889"
+                                android:text="9421823832"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Ashwini Bhondve"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
 
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9769885868"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Rahul Yadav"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9930028165"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:padding="10dp"
-                                android:text="Tushar Patil"
-                                android:textColor="#111111"
-                                android:textSize="16sp" />
-
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:onClick="launchDialer"
-                                android:padding="10dp"
-                                android:text="9595039504"
-                                android:textColor="#0011ff"
-                                android:textSize="16sp" />
-                        </LinearLayout>
                     </LinearLayout>
                     <!-- divider line -->
                     <ImageView
@@ -4960,7 +4641,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Dhaval Bisure"
+                                android:text="Aakanksha Dhaigude"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4970,7 +4651,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8879197459"
+                                android:text="9822749376"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -4984,7 +4665,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Humaira Sayyed"
+                                android:text="Akhil Umare"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -4994,7 +4675,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9930660343"
+                                android:text="8433858521"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -5008,7 +4689,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Neel Shah"
+                                android:text="Gaurav Mandhane"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -5018,7 +4699,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8879552736"
+                                android:text="9834842064"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -5032,7 +4713,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Pranjal Ranjan"
+                                android:text="Kiran Ambokar"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -5042,7 +4723,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="8169107843"
+                                android:text="8850161833"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -5056,7 +4737,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Ranjana Moolya "
+                                android:text="Sakshi Thoke"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -5066,7 +4747,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9850788251"
+                                android:text="7745053061"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>
@@ -5080,7 +4761,7 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:padding="10dp"
-                                android:text="Sourav Sankpal"
+                                android:text="Sumit Gupta"
                                 android:textColor="#111111"
                                 android:textSize="16sp" />
 
@@ -5090,7 +4771,31 @@ Cricket – a sport that  requires fitness, strength, delicacy of touch, superb 
                                 android:layout_weight="1"
                                 android:onClick="launchDialer"
                                 android:padding="10dp"
-                                android:text="9370076006"
+                                android:text="7045182395"
+                                android:textColor="#0011ff"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Vruddhi Mehta"
+                                android:textColor="#111111"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:onClick="launchDialer"
+                                android:padding="10dp"
+                                android:text="8097961193"
                                 android:textColor="#0011ff"
                                 android:textSize="16sp" />
                         </LinearLayout>

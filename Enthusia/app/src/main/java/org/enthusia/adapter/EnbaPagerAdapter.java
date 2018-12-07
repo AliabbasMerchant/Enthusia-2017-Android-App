@@ -18,10 +18,10 @@ public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-
+//
+//        if (position == 0)
+//            return new EnbaFixturesFragment();
         if (position == 0)
-            return new EnbaFixturesFragment();
-        if (position == 1)
             return new EnbaPointsFragment();
 
         return new EnbaStatsFragment();
@@ -29,18 +29,18 @@ public class EnbaPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position) {
+//            case 0:
+//                return "Matches";
             case 0:
-                return "Matches";
-            case 1:
                 return "Table";
-            case 2:
+            case 1:
                 return "MVP";
             default:
                 return null;

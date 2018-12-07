@@ -52,23 +52,23 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             imageViewHolder.title_layout.setVisibility(View.VISIBLE);
             imageViewHolder.title.setText(Constants.partners[2*i]);
         }
-        else if( i == 0 || i == 1){
+        else if( i == 0 || i == 1 || i == 2){
             imageViewHolder.single_sponsor_layout.setVisibility(View.VISIBLE);
             Glide.with(context)
                     .load(Constants.imageIds[2*i])
                     .fitCenter()
                     .crossFade()
                     .into(imageViewHolder.imageView);
-            imageViewHolder.imageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+            imageViewHolder.imageView.setOnClickListener((View v) -> {
+//                @Override
+//                public void onClick(View v) {
                     if(!Constants.links[2*i].equals("")){
                         String url = Constants.links[2*i];
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse(url));
-                        context.startActivity(i);
+                        Intent i2 = new Intent(Intent.ACTION_VIEW);
+                        i2.setData(Uri.parse(url));
+                        context.startActivity(i2);
                     }
-                }
+//                }
             });
             imageViewHolder.partner.setText(Constants.partners[2*i]);
         }

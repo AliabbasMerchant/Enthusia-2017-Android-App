@@ -31,7 +31,7 @@ public class EnbaFragment extends Fragment {
 
         mAdapter = new EnbaPagerAdapter(manager);
         mViewPager = view.findViewById(R.id.viewpager);
-        mViewPager.setOffscreenPageLimit(2);
+        mViewPager.setOffscreenPageLimit(1);
         mViewPager.setAdapter(mAdapter);
 
         TabLayout tabLayout = view.findViewById(R.id.tabs);
